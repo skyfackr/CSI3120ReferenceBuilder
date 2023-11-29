@@ -10,5 +10,14 @@ public class Symbol {
         this.type = "";
         this.name = "";
         this.value = "";
-    } 
+    }
+
+    @Override
+    public String toString() {
+        return "Symbol{" +
+                "type='" + type + '\'' +
+                ", name='" + name + '\'' +
+                ", value='" + value + '\'' +
+                '}';
+    }
 }
