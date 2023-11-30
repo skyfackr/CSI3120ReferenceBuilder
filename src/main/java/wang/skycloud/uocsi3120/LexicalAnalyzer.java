@@ -58,10 +58,10 @@ public class LexicalAnalyzer {
      static final int TYPE_STRING = 45;
      static final int PRINT = 46;
 
-    public static void initLexicalAnalyzer() {
+    public static void initLexicalAnalyzer(String name) {//change code to support custom input file name
         /* Open the input data file and process its contents */
         try {
-            in_fp = new BufferedReader(new FileReader("input.txt"));
+            in_fp = new BufferedReader(new FileReader(name));
             getChar();
             
         } catch (IOException e) {

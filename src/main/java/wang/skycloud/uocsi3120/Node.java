@@ -117,7 +117,7 @@ public class Node {
     }
 
     public Symbol symbolExists(String name) {
-        Symbol ans=new Symbol();
+        Symbol ans=null;
         for (int i = 0; i < count; i++) {
             if (symbolTable.symbols[i].name.equals(name))
             {

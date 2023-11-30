@@ -6,11 +6,11 @@ import java.io.IOException;
 public class SyntaxAnalyzer {
 
     public static void main(String[] args) {
-        LexicalAnalyzer.initLexicalAnalyzer();
+        LexicalAnalyzer.initLexicalAnalyzer("input.txt");
         try {
             analyzeSyntax();
         } catch (IOException e) {
-            // TODO Auto-generated catch block
+
             e.printStackTrace();
         }
     }
@@ -30,7 +30,7 @@ public class SyntaxAnalyzer {
 
     
 
-    private static void analyzeSyntax() throws IOException {
+    static void analyzeSyntax() throws IOException {
         Stack statementStack = new Stack(300);
         Node symbolTableList = new Node();
         Symbol identifier = new Symbol();
